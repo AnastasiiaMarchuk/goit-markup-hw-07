@@ -66,6 +66,15 @@
 		row-gap: 64px;
 		column-gap: 24px;
 	}
+
+	.sotial-list-link {
+		transition: background-color var(--transition-dur-bezier);
+	}
+
+	.sotial-list-link:focus,
+	.sotial-list-link:hover {
+		background-color: var(--hover-focus-color);
+	}
 }
 
 /* ==============================Desktop====================================== */
@@ -78,12 +87,4 @@
 		gap: 24px;
 	}
 
-	.sotial-list-link {
-		transition: background-color var(--transition-dur-bezier);
-	}
-
-	.sotial-list-link:focus,
-	.sotial-list-link:hover {
-		background-color: var(--hover-focus-color);
-	}
 }

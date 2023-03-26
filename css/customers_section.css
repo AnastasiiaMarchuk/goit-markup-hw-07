@@ -29,17 +29,6 @@
 	.customers-list {
 		column-gap: 24px;
 	}
-}
-
-/* ==============================Desktop====================================== */
-@media screen and (min-width: 1200px) {
-	.customers {
-		padding-top: 120px;
-	}
-
-	.customers-list {
-		gap: 24px;
-	}
 
 	.customers-link {
 		transition: background-color var(--background-color), border-color var(--transition-dur-bezier);
@@ -55,4 +44,16 @@
 	.customers-link:is(:focus, :hover) .customers-logo {
 		fill: var(--hover-focus-color);
 	}
+}
+
+/* ==============================Desktop====================================== */
+@media screen and (min-width: 1200px) {
+	.customers {
+		padding-top: 120px;
+	}
+
+	.customers-list {
+		gap: 24px;
+	}
+
 }

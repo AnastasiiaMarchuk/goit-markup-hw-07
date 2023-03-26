@@ -36,6 +36,7 @@
 	}
 
 	.benefits-list {
+		width: 100%;
 		flex-direction: row;
 		flex-wrap: wrap;
 		row-gap: 72px;
