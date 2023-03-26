@@ -14,7 +14,7 @@
 	gap: 72px;
 }
 
-.mobile-tablet-title {
+.benefits-subtitle {
 	margin-bottom: 8px;
 	font-weight: 700;
 	font-size: 36px;
@@ -25,9 +25,13 @@
 	color: var(--main-color);
 }
 
+.benefits-description {
+	font-weight: 500;
+}
+
 
 @media screen and (min-width: 768px) {
-	.mobile-tablet-title  {
+	.benefits-subtitle  {
 		text-align: start;
 	}
 
@@ -48,6 +52,16 @@
 
 .benefits-list {
 	flex-wrap: nowrap;
+}
+
+.benefits-subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.benefits-description {
+	font-weight: 400;
 }
 .benefits-icon {
 	width: 264px;

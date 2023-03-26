@@ -42,7 +42,6 @@ screen and   (-webkit-min-device-pixel-ratio: 2),
 @media screen and (min-width: 768px) {
 
 	.hero {
-		width: 765;
 		padding-bottom: 108px;
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/dark-bg-tablet-min.jpg');
 		background-size: cover;
@@ -62,7 +61,7 @@ screen and   (-webkit-min-device-pixel-ratio: 2),
 		gap: 40px;
 	}
 	.hero-title {
-		max-width: 496px;
+		min-width: 496px;
 		font-size: 56px;
 		line-height: 1.07;
 	}

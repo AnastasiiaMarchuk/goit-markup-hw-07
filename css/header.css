@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
 	.menu {
 		display: none;
 	}
@@ -10,6 +10,7 @@
 		border: none;
 		padding: 0;
 		line-height: 0;
+		cursor: pointer;
 	}
 }
 
@@ -56,6 +57,7 @@
 		margin-bottom: 0;
 		gap: 40px;
 	}
+	
 	.header-navigation {
 		display: flex;
 		align-items: center;
@@ -78,11 +80,14 @@
 		line-height: 1.5;
 		letter-spacing: 0.02em;
 		color: var(--main-color);
+		transition: color var(--transition-dur-bezier);
 	}
 
+ 
 	.menu-link:active {
 		color: var(--hover-focus-color);
 	}
+
 	.current {
 		position: relative;
 		color: var(--hover-focus-color);
@@ -118,10 +123,20 @@
 	.address-link {
 		font-style: normal;
 		font-weight: 400;
-		font-size: 14px;
+		font-size: 12px;
 		line-height: 1.17;
 		letter-spacing: 0.04em;
 		color: var(--text-color);
+		transition: color var(--transition-dur-bezier);
+	}
+
+	.menu-link:is(:hover, :focus, :active) {
+		color: var(--hover-focus-color);
+	}
+
+	.address-link:hover,
+	.address-link:focus {
+		color: var(--hover-focus-color);
 	}
 }
 
@@ -132,8 +147,8 @@
 		line-height: 1.33;
 	}
 
-	.menu-link {
-		transition: color var(--transition-dur-bezier);
+	.address-link {
+		font-size: 14px;
 	}
 
 	.address-list {
@@ -156,20 +171,5 @@
 		margin-left: 40px;
 	}
 
-	.menu-link:is(:hover, :focus, :active) {
-		color: var(--hover-focus-color);
-	}
-	.current {
-		position: relative;
-		color: var(--hover-focus-color);
-	}
 
-	.address-link {
-		transition: color var(--transition-dur-bezier);
-	}
-
-	.address-link:hover,
-	.address-link:focus {
-		color: var(--hover-focus-color);
-	}
 }

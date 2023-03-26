@@ -152,6 +152,7 @@
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	color: var(--background-color);
+	cursor: pointer;
 }
 
 .subscribe-icon {
@@ -196,6 +197,27 @@
 	.footer-container {
 		align-items: flex-start;
 	}
+
+	.footer-social-list-link {
+		transition: background-color var(--transition-dur-bezier);
+	}
+	.footer-social-list-icon {
+		transition: fill var(--transition-dur-bezier);
+	}
+	.footer-social-list-link:is(:focus, :hover) {
+		background-color: #31d0aa;
+	}
+
+	.footer-subscribe-form-button {
+		cursor: pointer;
+		transition: background-color var(--transition-dur-bezier);
+	}
+
+	.footer-subscribe-form-button:hover,
+	.footer-subscribe-form-button:focus {
+		background-color: var(--hover-focus-color);
+	}
+
 }
 
 /* ==============================Desktop============================ */
@@ -217,23 +239,4 @@
 		margin-right: 80px;
 	}
 
-	.footer-social-list-link {
-		transition: background-color var(--transition-dur-bezier);
-	}
-	.footer-social-list-icon {
-		transition: fill var(--transition-dur-bezier);
-	}
-	.footer-social-list-link:is(:focus, :hover) {
-		background-color: #31d0aa;
-	}
-
-	.footer-subscribe-form-button {
-		cursor: pointer;
-		transition: background-color var(--transition-dur-bezier);
-	}
-
-	.footer-subscribe-form-button:hover,
-	.footer-subscribe-form-button:focus {
-		background-color: var(--hover-focus-color);
-	}
 }

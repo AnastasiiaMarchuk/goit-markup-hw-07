@@ -22,7 +22,7 @@
 	border-top: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
 	.overlay {
 		display: none;
 	}
@@ -80,21 +80,6 @@
 		row-gap: 72px;
 		column-gap: 24px;
 	}
-}
-
-/* ==============================Desktop====================================== */
-@media screen and (min-width: 1200px) {
-	.projects {
-		padding-top: 96px;
-	}
-	.filters-btn-list {
-		padding-bottom: 72px;
-	}
-
-	.projects-list {
-		row-gap: 48px;
-		justify-content: center;
-	}
 
 	.projects-item {
 		transition: box-shadow var(--transition-dur-bezier);
@@ -141,4 +126,22 @@
 	.filters-btn {
 		cursor: pointer;
 	}
+
+}
+
+/* ==============================Desktop====================================== */
+@media screen and (min-width: 1200px) {
+	.projects {
+		padding-top: 96px;
+	}
+	.filters-btn-list {
+		padding-bottom: 72px;
+	}
+
+	.projects-list {
+		row-gap: 48px;
+		justify-content: center;
+	}
+
+	
 }
